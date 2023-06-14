@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 import Colors from './Colors';
+import Size from './Size';
 import { h, w } from '../utils/ui/WHNormalizer';
 
-import Size from './Size';
 
 const Styles = StyleSheet.create({
   container: {

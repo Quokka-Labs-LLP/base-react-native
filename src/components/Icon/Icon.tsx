@@ -2,8 +2,7 @@ import React from 'react';
 
 import { ViewStyle } from 'react-native'
 
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 
 export interface IconProps {
   type: Function;

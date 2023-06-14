@@ -6,8 +6,7 @@ import { Icon, Icons } from './Icon';
 import MText from './Text';
 import { Row } from './Wrapper';
 
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 
 interface ChipProps {
   name: string;

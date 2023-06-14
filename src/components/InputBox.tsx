@@ -9,8 +9,7 @@ import * as Animatable from 'react-native-animatable';
 import { Icon, Icons } from './Icon';
 import MText from './Text';
 
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import Styles from '~styles/Styles';
 import { logger } from '~utils';
 import { w } from '~utils/ui/WHNormalizer';

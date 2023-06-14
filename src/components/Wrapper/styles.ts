@@ -1,9 +1,7 @@
 import { StyleSheet } from "react-native";
 
-import Size from "~constants/Size";
-import { Colors } from "~styles";
-import Styles from "~styles/Styles";
-import { w } from "~utils/ui/WHNormalizer";
+import { Colors, Size, Styles } from "~styles";
+import { w } from "~utils";
 
 export default StyleSheet.create({
   container: {

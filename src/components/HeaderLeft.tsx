@@ -5,11 +5,10 @@ import { BackHandler, StyleSheet, TouchableOpacity, View, ViewStyle } from 'reac
 
 import { Icon, Icons } from './Icon';
 
-import Size from '~constants/Size';
 import NavigationService from '~navigation/NavigationService';
+import { Size } from '~styles';
 import Styles from '~styles/Styles';
 import { h } from '~utils/ui/WHNormalizer';
-
 
 interface HeaderProps {
   // title?: String;

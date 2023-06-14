@@ -7,6 +7,7 @@ import {
 } from 'react-native'
 
 import MText from '~components/Text';
+
 import { Colors } from '~styles';
 
 type fontSizeType = 18 | 24 | 28 | number;

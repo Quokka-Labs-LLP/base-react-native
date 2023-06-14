@@ -6,7 +6,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-import Size from '~constants/Size';
+import { Size } from '~styles';
 
 interface Props {
   loading: boolean
@@ -25,7 +25,7 @@ const Loader = ({ loading }: Props) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical:Size.l
+    marginVertical: Size.l
   },
 });
 

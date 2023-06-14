@@ -7,7 +7,6 @@ import Skeleton from './Skeleton';
 import { Colors } from '~styles';
 import Styles from '~styles/Styles';
 
-
 interface CircleProps {
   size: number;
   background?: string;

@@ -1,1 +1,1 @@
-export { default as CountryModal } from './CountryModal'
+export { default as SimpleModal } from './SimpleModal'

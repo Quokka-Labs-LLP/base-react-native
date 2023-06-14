@@ -1,3 +1,3 @@
 export default {
-  img: require('./img.png'),
+  // img: require('./img.png'),
 }

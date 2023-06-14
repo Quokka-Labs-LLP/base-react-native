@@ -1,8 +1,12 @@
 import React, { useEffect } from 'react';
+
+import { useTheme } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { useTranslation } from 'react-i18next';
 import { SafeAreaView, StyleSheet } from 'react-native';
 
-import routes from '../routes';
 import Home from '../../screens/home/Home';
+import routes from '../routes';
 
 const Stack = createStackNavigator();
 

@@ -1,16 +1,14 @@
 import React from 'react'
 
 import { useTheme } from '@react-navigation/native';
-import { View, StyleSheet, TouchableOpacity, Image, ViewStyle } from 'react-native'
-import { Badge } from 'react-native-paper'
+import { View, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native'
 
 import { Icon, Icons } from './Icon';
 
 import MText from './Text';
 
 import fonts from '~assets/fonts';
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import Styles from '~styles/Styles';
 import { h, w } from '~utils/ui/WHNormalizer';
 
@@ -34,7 +32,6 @@ interface AppHeaderProps {
   optional?: string;
   optionalType?: Function;
   optionalBtnPress?: () => void;
-  optionalBadge?: number;
   children?: React.ReactNode;
   testNetTag?: boolean;
 }
@@ -57,7 +54,6 @@ const AppHeader = ({
   optional,
   optionalType,
   optionalBtnPress,
-  optionalBadge,
   children,
 }: AppHeaderProps) => {
   const theme = useTheme();
@@ -89,11 +85,6 @@ const AppHeader = ({
               size={IconSize}
               color={iconColor || color}
             />
-            {optionalBadge && (
-              <Badge style={styles.badgeStyles}>
-                {optionalBadge}
-              </Badge>
-            )}
           </TouchableOpacity>
         )}
         {!!right && (
@@ -194,7 +185,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   text: {
-    fontFamily: fonts.ProximaNovaRegular,
+    // fontFamily: fonts.ProximaNovaRegular,
     color: Colors.background,
     fontSize: w(3.3),
   },

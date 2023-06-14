@@ -19,8 +19,7 @@ import MText from './Text';
 import { Row } from './Wrapper';
 
 import fonts from '~assets/fonts';
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import Styles from '~styles/Styles';
 import { logger } from '~utils';
 import { h, w } from '~utils/ui/WHNormalizer';
@@ -174,7 +173,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: w(4.3),
-    fontFamily: fonts.ProximaNovaSemiBold,
+    // fontFamily: fonts.ProximaNovaSemiBold,
     bottom: 1,
     textTransform: 'capitalize'
   },

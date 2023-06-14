@@ -2,9 +2,9 @@ import React, { FC } from 'react'
 
 import * as Animatable from 'react-native-animatable';
 
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import { logger } from '~utils';
+
 export interface SkeletonProps {
   height: number | string;
   width: number | string;

@@ -5,8 +5,7 @@ import { BaseToast, ErrorToast, InfoToast, ToastConfig } from 'react-native-toas
 
 import fonts from '../assets/fonts';
 
-import Size from '~constants/Size';
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import { w } from '~utils/ui/WHNormalizer';
 
 const toastConfig: ToastConfig = {

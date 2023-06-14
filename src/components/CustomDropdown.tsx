@@ -5,8 +5,7 @@ import { DefaultTFuncReturn } from 'i18next';
 import { View, Text, ViewStyle, TextStyle, StyleSheet } from 'react-native'
 import { Dropdown } from 'react-native-element-dropdown';
 
-import Size from "~constants/Size";
-import { Colors } from '~styles';
+import { Colors, Size } from '~styles';
 import Styles from '~styles/Styles';
 
 import { w } from '~utils/ui/WHNormalizer';

@@ -1,16 +1,12 @@
 import React from 'react'
 
 import { useTheme } from '@react-navigation/native';
-import { StyleSheet, Text, TextStyle } from 'react-native'
-
+import { StyleProp, StyleSheet, Text, TextStyle } from 'react-native'
 
 import Skeleton from './Skeleton';
 
-import fonts from '~assets/fonts';
-import Size from '~constants/Size';
-import { w } from '~utils/ui/WHNormalizer';
-import { Colors } from '~styles';
-import { logger } from '~utils';
+import { Colors, Size } from '~styles';
+import { w } from '~utils';
 
 type textTransform = 'none' | 'uppercase' | 'lowercase' | 'capitalize'
 export type textAlign = 'auto' | 'left' | 'right' | 'center' | 'justify' | undefined;
@@ -22,7 +18,7 @@ interface MTextProps {
   children?: React.ReactNode | string | undefined;
   weight?: string;
   align?: textAlign;
-  style?: TextStyle | TextStyle[] | undefined;
+  style?: StyleProp<TextStyle> | undefined;
   padding?: number;
   margin?: number;
   marginHorizontal?: number;
@@ -92,7 +88,7 @@ const MText = ({
         {
           fontSize: size,
           color: color ? color : theme.colors.text,
-          fontFamily: isBold ? fonts.ProximaNovaBold : family,
+          // fontFamily: isBold ? fonts.ProximaNovaBold : family,
           // fontWeight: isBold ? 'bold' : weight,
           textAlign: align,
           marginVertical,
@@ -115,7 +111,7 @@ const MText = ({
 
 MText.defaultProps = {
   size: w(3.4),
-  family: fonts.ProximaNovaRegular,
+  // family: fonts.ProximaNovaRegular,
   weight: 'normal',
   align: 'auto',
   skH: Size.s,
@@ -127,8 +123,5 @@ MText.defaultProps = {
 
 export default MText;
 const styles = StyleSheet.create({
-  text: {
-    fontFamily: fonts.ProximaNovaRegular,
-    fontSize: w(3.4),
-  },
+  text: {},
 })
